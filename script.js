@@ -10,6 +10,6 @@ $navItems.forEach((item)=>{
 
 	item.addEventListener("click", (e)=>{
 
-		$menu.classList.toggle("active-menu");
+		$menu.classList.remove("active-menu");
 	})
 })
