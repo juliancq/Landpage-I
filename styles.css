@@ -1,0 +1,102 @@
+:root{
+
+	--orange: #f1ae4b;
+	--orange2: #f3d9b2;
+}
+
+*{
+	margin: 0;
+	font-family: sans-serif;
+	scroll-behavior: smooth;
+}
+
+body{
+
+	background-color: var(--orange2);
+
+}
+
+header{
+
+	background-color: var(--orange);
+	position: fixed;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+header h1{
+
+	text-align: center;
+
+}
+
+.navbar{
+
+	background-color: var(--orange);
+    z-index: 998;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    transform: translateX(-100%);
+    transition: all 1s ease;
+    position: fixed;
+}
+
+.active-menu{
+
+	transform: translateX(0);
+}
+
+.navbar a{
+
+	color: black;
+	text-decoration:none;
+	padding: 8vh;
+}
+
+.navbar a:hover{
+
+	color: var(--orange);
+	background-color: black;
+}
+
+main section{
+
+	min-height: 100vh;
+	padding-top: 70px;
+}
+
+main section h2{
+
+	text-align: center;
+}
+
+main section p {
+
+	font-size: 20px;
+	padding: 10px;
+	max-width: 1000px;
+	margin: auto;
+}
+
+#menubtn{
+	
+	position: fixed;
+	width: 70px;
+	height: 70px;
+	background-color: var(--orange);
+	bottom: 0;
+	right: 0;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 100%;
+	line-height: 50px;
+	z-index: 999;
+
+}
